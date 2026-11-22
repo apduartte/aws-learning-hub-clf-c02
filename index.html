@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portal de estudos para AWS Certified Cloud Practitioner CLF-C02">
+<title>CLF-C02 | Central de Estudos AWS</title>
+<style>
+:root{--bg:#f4f7fb;--panel:#fff;--ink:#172338;--muted:#65748b;--line:#e3e9f1;--nav:#101d32;--blue:#2563eb;--blue2:#eaf1ff;--cyan:#0e7490;--green:#16845b;--amber:#a16207;--shadow:0 12px 35px rgba(22,40,70,.07)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 Inter,system-ui,-apple-system,Segoe UI,sans-serif}button{font:inherit;cursor:pointer;border:0}.app{display:grid;grid-template-columns:250px 1fr;min-height:100vh}.sidebar{background:var(--nav);color:#e8eef8;padding:26px 18px;display:flex;flex-direction:column;gap:26px}.brand{display:flex;align-items:center;gap:12px;padding:0 8px}.brand-mark{width:38px;height:38px;border-radius:12px;background:#ff9900;color:#182235;display:grid;place-items:center;font-weight:900;font-size:20px}.brand strong{display:block;font-size:15px}.brand small{color:#9eacc1}.nav-label{color:#8190a8;font-size:11px;font-weight:800;letter-spacing:.12em;padding:0 10px;margin-bottom:8px}.nav{display:grid;gap:5px}.nav button{background:transparent;color:#c5d0e0;text-align:left;padding:11px 12px;border-radius:9px;display:flex;gap:12px;align-items:center}.nav button.active,.nav button:hover{background:#20314d;color:#fff}.nav .ico{width:20px;text-align:center}.side-note{margin-top:auto;border:1px solid #34435a;background:#172740;padding:14px;border-radius:12px;color:#cbd5e1;font-size:12px}.side-note b{color:white;display:block;margin-bottom:5px}.main{padding:30px clamp(18px,4vw,54px);max-width:1500px;width:100%;margin:auto}.topbar{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:28px}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}.topbar h1{font-size:clamp(24px,3vw,34px);line-height:1.15;margin:5px 0}.sub{color:var(--muted);margin:0}.date-chip{background:#fff;border:1px solid var(--line);padding:9px 13px;border-radius:30px;color:var(--muted);font-size:12px;white-space:nowrap}.hero{background:linear-gradient(120deg,#12233e,#1b477b);color:#fff;border-radius:18px;padding:26px 28px;display:flex;justify-content:space-between;gap:20px;align-items:center;box-shadow:var(--shadow);margin-bottom:22px}.hero h2{font-size:23px;margin:5px 0 7px}.hero p{color:#d5e3f7;margin:0;max-width:620px}.hero .eyebrow{color:#9cc2ff}.hero button,.primary{background:#ff9900;color:#172338;font-weight:800;padding:11px 16px;border-radius:9px;white-space:nowrap}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}.stat,.panel,.domain{background:var(--panel);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}.stat{padding:17px}.stat small{color:var(--muted);display:block}.stat strong{font-size:25px;display:block;margin:4px 0}.stat em{font-style:normal;color:var(--green);font-size:12px}.layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(280px,.85fr);gap:18px}.panel{padding:20px;margin-bottom:18px}.panel-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:15px}.panel h3{margin:0;font-size:17px}.panel-head small{color:var(--muted)}.domains{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.domain{padding:15px;box-shadow:none}.domain-top{display:flex;justify-content:space-between;gap:8px}.domain b{font-size:14px}.domain small{color:var(--muted)}.pct{font-weight:800;color:var(--blue)}.bar{height:7px;background:#edf1f6;border-radius:20px;margin:12px 0 7px;overflow:hidden}.bar span{height:100%;display:block;background:var(--blue);border-radius:20px}.domain button{padding:7px 10px;background:var(--blue2);color:var(--blue);border-radius:7px;font-size:12px;font-weight:700}.task{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.task:last-child{border:0}.task-icon{width:34px;height:34px;border-radius:10px;background:#eef4ff;display:grid;place-items:center}.task b{display:block;font-size:13px}.task small{color:var(--muted)}.tag{font-size:10px;background:#eef4ff;color:var(--blue);padding:3px 7px;border-radius:20px;font-weight:800}.method{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}.method div{background:#f5f8fc;border-radius:10px;padding:11px 8px;text-align:center}.method b{display:block;color:var(--blue);font-size:13px}.method small{font-size:10px;color:var(--muted)}.question{background:#f8fafc;border:1px solid var(--line);padding:16px;border-radius:12px}.question p{font-weight:700;margin:0 0 12px}.option{display:block;width:100%;text-align:left;background:white;border:1px solid var(--line);padding:10px 12px;border-radius:8px;margin:7px 0;color:var(--ink)}.option:hover{border-color:var(--blue);background:#f4f7ff}.option.correct{border-color:#16a36a;background:#eaf8f1}.option.wrong{border-color:#dc6262;background:#fff0f0}.feedback{font-size:13px;margin-top:10px;color:var(--muted)}.flash{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#fff8eb;border:1px solid #f5dfb7;padding:15px;border-radius:12px}.flash strong{display:block}.flash p{margin:4px 0;color:#6b5b3e;font-size:13px}.secondary{background:#fff;border:1px solid var(--line);padding:9px 12px;border-radius:8px;color:var(--ink)}.footer{color:var(--muted);font-size:11px;text-align:center;padding:10px}.view{display:none}.view.active{display:block}
+@media(max-width:950px){.app{grid-template-columns:1fr}.sidebar{padding:14px;gap:12px}.sidebar .nav-wrap{overflow:auto}.nav{display:flex}.nav button{white-space:nowrap}.side-note{display:none}.main{padding:22px 16px}.stats{grid-template-columns:repeat(2,1fr)}.layout{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{display:block}.hero button{margin-top:16px}.domains{grid-template-columns:1fr}.method{grid-template-columns:repeat(3,1fr)}.topbar{align-items:flex-start;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar">
+  <div class="brand"><div class="brand-mark">☁</div><div><strong>AWS Learning Hub</strong><small>CLF-C02 · Cloud Practitioner</small></div></div>
+  <div class="nav-wrap"><div class="nav-label">AMBIENTE DE ESTUDO</div><nav class="nav">
+    <button class="active" data-view="dashboard"><span class="ico">▦</span> Visão geral</button>
+    <button data-view="trilha"><span class="ico">⌘</span> Trilha de aprendizagem</button>
+    <button data-view="questoes"><span class="ico">☑</span> Banco de questões</button>
+    <button data-view="flashcards"><span class="ico">▤</span> Flashcards</button>
+    <button data-view="metodo"><span class="ico">◎</span> Método de estudo</button>
+  </nav></div>
+  <div class="side-note"><b>Meta de preparação</b>Construir domínio conceitual e capacidade de distinguir serviços AWS em cenários de prova.<br><br><span>Rotina sugerida: 3 horas por dia</span></div>
+</aside>
+<main class="main">
+<header class="topbar"><div><div class="eyebrow">CENTRAL DE PREPARAÇÃO · AWS</div><h1 id="pageTitle">Visão geral</h1><p class="sub">Seu ambiente de aprendizagem para a certificação CLF-C02.</p></div><div class="date-chip">☁ AWS Certified Cloud Practitioner</div></header>
+
+<section id="dashboard" class="view active">
+  <div class="hero"><div><div class="eyebrow">PLANO DE ESTUDOS</div><h2>Aprenda conceitos. Compare serviços. Resolva cenários.</h2><p>Uma trilha estruturada para compreender os fundamentos da AWS, consolidar os domínios do exame e evoluir com prática deliberada.</p></div><button onclick="showView('trilha')">Continuar estudos →</button></div>
+  <div class="stats">
+    <div class="stat"><small>Progresso geral</small><strong id="overall">0%</strong><em>Atualizado neste navegador</em></div>
+    <div class="stat"><small>Domínios do exame</small><strong>4</strong><em>Conteúdo organizado</em></div>
+    <div class="stat"><small>Questões respondidas</small><strong id="answered">0</strong><em>Prática registrada nesta sessão</em></div>
+    <div class="stat"><small>Meta diária</small><strong>180 min</strong><em>3 horas de estudo</em></div>
+  </div>
+  <div class="layout">
+    <div>
+      <section class="panel"><div class="panel-head"><h3>Domínios da certificação</h3><small>Pesos oficiais do exame</small></div><div class="domains" id="domainCards"></div></section>
+      <section class="panel"><div class="panel-head"><h3>Questão de aquecimento</h3><span class="tag">CLF-C02</span></div><div class="question"><p>Uma aplicação precisa compartilhar arquivos entre várias instâncias Linux do Amazon EC2, com capacidade que cresce automaticamente. Qual serviço atende melhor?</p><div id="quickOptions"></div><div id="quickFeedback" class="feedback"></div></div></section>
+    </div>
+    <div>
+      <section class="panel"><div class="panel-head"><h3>Plano diário · 180 minutos</h3><small>Rotina sugerida</small></div>
+        <div class="task"><div class="task-icon">📘</div><div><b>Conceito e modelo mental · 40 min</b><small>Estudar documentação e anotar definições.</small></div></div>
+        <div class="task"><div class="task-icon">🧠</div><div><b>Explicação Feynman · 25 min</b><small>Explicar o tema com suas próprias palavras.</small></div></div>
+        <div class="task"><div class="task-icon">⚖</div><div><b>Comparação de serviços · 35 min</b><small>Identificar diferenças e casos de uso.</small></div></div>
+        <div class="task"><div class="task-icon">☑</div><div><b>Questões e correção · 55 min</b><small>Resolver, justificar e revisar erros.</small></div></div>
+        <div class="task"><div class="task-icon">✍</div><div><b>Flashcards e revisão · 25 min</b><small>Consolidar pontos de atenção.</small></div></div>
+      </section>
+      <section class="panel"><div class="panel-head"><h3>Próxima ação</h3></div><p style="color:var(--muted);font-size:13px">Priorize um domínio por vez. Avance quando conseguir explicar os conceitos e acertar questões de cenários, não apenas memorizar nomes.</p><button class="primary" onclick="showView('questoes')">Praticar agora</button></section>
+    </div>
+  </div>
+</section>
+
+<section id="trilha" class="view">
+  <section class="panel"><div class="panel-head"><h3>Trilha de aprendizagem CLF-C02</h3><small>Selecione um domínio para registrar seu progresso</small></div><div class="domains" id="trackCards"></div></section>
+  <section class="panel"><h3>Sequência recomendada</h3><ol style="color:var(--muted);line-height:2"><li>Cloud Concepts: valor da nuvem, economia, escalabilidade e agilidade.</li><li>Security and Compliance: IAM, responsabilidade compartilhada, proteção e conformidade.</li><li>Cloud Technology and Services: computação, armazenamento, rede, banco de dados e monitoramento.</li><li>Billing, Pricing and Support: modelos de preço, faturamento, ferramentas de custos e suporte.</li></ol></section>
+</section>
+
+<section id="questoes" class="view">
+  <section class="panel"><div class="panel-head"><h3>Banco de questões</h3><span class="tag">Treino demonstrativo</span></div><p style="color:var(--muted)">Leia o cenário, escolha a alternativa e confira a justificativa. As questões abaixo são autorais para estudo, não questões oficiais do exame.</p><div id="quizArea"></div><div style="display:flex;gap:10px;margin-top:14px"><button class="primary" onclick="nextQuestion()">Próxima questão →</button><button class="secondary" onclick="resetQuiz()">Reiniciar</button></div></section>
+</section>
+
+<section id="flashcards" class="view">
+  <section class="panel"><div class="panel-head"><h3>Flashcards de revisão</h3><small id="flashCount">Cartão 1 de 4</small></div><div class="flash"><div><strong id="flashFront">O que é o Amazon EFS?</strong><p id="flashBack" hidden>Serviço gerenciado de sistema de arquivos elástico, compatível com NFS, que pode ser compartilhado por múltiplos clientes.</p></div><button class="secondary" id="flipBtn" onclick="flipCard()">Revelar resposta</button></div><div style="display:flex;gap:10px;margin-top:14px"><button class="secondary" onclick="prevFlash()">← Anterior</button><button class="primary" onclick="nextFlash()">Próximo →</button></div></section>
+</section>
+
+<section id="metodo" class="view">
+  <section class="panel"><div class="panel-head"><h3>Protocolo de aprendizagem</h3><span class="tag">Ciclo de estudo</span></div><div class="method">
+    <div><b>5W2H</b><small>Contextualizar</small></div><div><b>OODA</b><small>Observar e ajustar</small></div><div><b>Feynman</b><small>Explicar simples</small></div><div><b>PREP</b><small>Argumentar</small></div><div><b>LYRA</b><small>Estruturar revisão</small></div>
+  </div><h3 style="margin-top:22px">Como aplicar em cada serviço AWS</h3><ol style="color:var(--muted);line-height:2"><li><b>Conceito:</b> defina o serviço e o problema que resolve.</li><li><b>Modelo mental:</b> represente como funciona e quais componentes utiliza.</li><li><b>Exemplo:</b> associe a um cenário real de arquitetura.</li><li><b>Comparação:</b> diferencie de serviços semelhantes.</li><li><b>Questão:</b> identifique palavras-chave e elimine alternativas.</li><li><b>Correção:</b> explique por que a resposta correta é adequada e as demais não.</li><li><b>Aplicação:</b> registre uma decisão técnica e um flashcard.</li></ol></section>
+</section>
+<div class="footer">Material de apoio independente para preparação. Consulte o exam guide e a documentação oficial da AWS para validar objetivos e atualizações.</div>
+</main>
+</div>
+<script>
+const domains=[
+{name:"Cloud Concepts",weight:"24%",pct:0,desc:"Benefícios, economia, arquitetura e migração."},
+{name:"Security and Compliance",weight:"30%",pct:0,desc:"IAM, responsabilidade compartilhada e conformidade."},
+{name:"Cloud Technology and Services",weight:"34%",pct:0,desc:"Serviços AWS, infraestrutura e casos de uso."},
+{name:"Billing, Pricing and Support",weight:"12%",pct:0,desc:"Custos, faturamento, preços e suporte."}
+];
+const questions=[
+{q:"Uma aplicação precisa compartilhar arquivos entre várias instâncias Linux do Amazon EC2, com capacidade que cresce automaticamente. Qual serviço atende melhor?",opts:["Amazon EBS","Amazon EFS","Amazon S3","AWS Storage Gateway"],a:1,why:"Amazon EFS fornece armazenamento de arquivos compartilhado via NFS, acessível simultaneamente por múltiplos clientes compatíveis e com elasticidade."},
+{q:"Qual serviço permite gerenciar usuários, grupos, funções e permissões de acesso aos recursos AWS?",opts:["AWS IAM","Amazon CloudWatch","AWS Artifact","AWS Budgets"],a:0,why:"AWS IAM gerencia identidades e permissões. O princípio do menor privilégio orienta conceder apenas as permissões necessárias."},
+{q:"Qual modelo permite pagar pela capacidade computacional conforme o uso, sem comprar servidores físicos antecipadamente?",opts:["CapEx tradicional","Pay-as-you-go","Licença perpétua obrigatória","Capacidade fixa local"],a:1,why:"O modelo pay-as-you-go reduz a necessidade de investimento inicial e relaciona custos ao consumo dos recursos."}
+];
+let qIndex=0,answered=0,flashIndex=0;
+const flashcards=[
+["O que é o Amazon EFS?","Sistema de arquivos gerenciado e elástico, compatível com NFS, que permite compartilhamento entre clientes compatíveis."],
+["Qual a diferença essencial entre EBS e EFS?","EBS oferece volumes em bloco, normalmente associados a uma instância; EFS oferece sistema de arquivos compartilhado via NFS."],
+["O que é o modelo de responsabilidade compartilhada?","A AWS é responsável pela segurança da nuvem; o cliente é responsável pela segurança na nuvem, conforme o serviço utilizado."],
+["Para que serve o AWS IAM?","Controlar autenticação e autorização de identidades que acessam recursos AWS."]
+];
+function cards(target){document.getElementById(target).innerHTML=domains.map((d,i)=>`<article class="domain"><div class="domain-top"><div><b>${d.name}</b><br><small>${d.weight} do exame · ${d.desc}</small></div><span class="pct">${d.pct}%</span></div><div class="bar"><span style="width:${d.pct}%"></span></div><button onclick="updateProgress(${i})">Atualizar progresso</button></article>`).join('')}
+function updateProgress(i){let v=prompt("Informe seu domínio neste tópico (0 a 100):",domains[i].pct);if(v===null)return;v=Math.max(0,Math.min(100,Number(v)||0));domains[i].pct=v;cards('domainCards');cards('trackCards');document.getElementById('overall').textContent=Math.round(domains.reduce((s,d)=>s+d.pct,0)/4)+'%'}
+function showView(id){document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));document.querySelectorAll('.nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));const names={dashboard:'Visão geral',trilha:'Trilha de aprendizagem',questoes:'Banco de questões',flashcards:'Flashcards',metodo:'Método de estudo'};document.getElementById('pageTitle').textContent=names[id];}
+document.querySelectorAll('.nav button').forEach(b=>b.addEventListener('click',()=>showView(b.dataset.view)));
+function renderQuestion(container,index,interactive=true){let q=questions[index];container.innerHTML=`<div class="question"><p>${q.q}</p>${q.opts.map((o,i)=>`<button class="option" ${interactive?'':'disabled'} onclick="answer(${i},this)">${String.fromCharCode(65+i)}. ${o}</button>`).join('')}<div class="feedback" id="qfeedback"></div></div>`}
+function answer(i,el){let q=questions[qIndex],opts=el.parentElement.querySelectorAll('.option');if(el.parentElement.dataset.done)return;el.parentElement.dataset.done='1';opts.forEach((b,n)=>{b.disabled=true;if(n===q.a)b.classList.add('correct')});if(i!==q.a)el.classList.add('wrong');document.getElementById('qfeedback').textContent=(i===q.a?'Correto. ':'Não é a alternativa correta. ')+q.why;answered++;document.getElementById('answered').textContent=answered}
+function nextQuestion(){qIndex=(qIndex+1)%questions.length;renderQuestion(document.getElementById('quizArea'),qIndex)}
+function resetQuiz(){qIndex=0;renderQuestion(document.getElementById('quizArea'),qIndex)}
+function renderQuick(){let q=questions[0];document.getElementById('quickOptions').innerHTML=q.opts.map((o,i)=>`<button class="option" onclick="quickAnswer(${i},this)">${String.fromCharCode(65+i)}. ${o}</button>`).join('')}
+function quickAnswer(i,el){let q=questions[0],all=el.parentElement.querySelectorAll('button');all.forEach((b,n)=>{b.disabled=true;if(n===q.a)b.classList.add('correct')});if(i!==q.a)el.classList.add('wrong');document.getElementById('quickFeedback').textContent=q.why}
+function flipCard(){let back=document.getElementById('flashBack'),front=document.getElementById('flashFront');let showing=!back.hidden;back.hidden=showing;front.hidden=!showing;document.getElementById('flipBtn').textContent=showing?'Revelar resposta':'Ver pergunta'}
+function loadFlash(){document.getElementById('flashFront').textContent=flashcards[flashIndex][0];document.getElementById('flashBack').textContent=flashcards[flashIndex][1];document.getElementById('flashFront').hidden=false;document.getElementById('flashBack').hidden=true;document.getElementById('flipBtn').textContent='Revelar resposta';document.getElementById('flashCount').textContent=`Cartão ${flashIndex+1} de ${flashcards.length}`}
+function nextFlash(){flashIndex=(flashIndex+1)%flashcards.length;loadFlash()}function prevFlash(){flashIndex=(flashIndex-1+flashcards.length)%flashcards.length;loadFlash()}
+cards('domainCards');cards('trackCards');renderQuestion(document.getElementById('quizArea'),0);renderQuick();loadFlash();
+</script>
+</body>
+</html>
